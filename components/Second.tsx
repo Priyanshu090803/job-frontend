@@ -1,7 +1,6 @@
 import { ArrowRight, Phone } from 'lucide-react'
 import Image from 'next/image'
 import LinearSpan from './utils/LinearSpan'
-
 const Second = () => {
   return (
     <div className=' h-full  w-full relative   flex justify-end 

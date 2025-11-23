@@ -1,29 +1,4 @@
-// import { ArrowRight } from "lucide-react"
-
  
-
-// const Four = () => {
-//   return (
-//     <div className=' text-white font-inter h-[652px] w-full mt-40   py-[44px] px-[70px] relative '
-//      style={{backgroundImage:"url('/pagefour.png')", backgroundSize:"cover",objectFit:"cover",backgroundPosition:"top-10"}}
-//     >
-//     <div className="   absolute h-full w-full top-0 left-0 bg-black opacity-40"/>
-
-//     <span className=' absolute left-[70px] top-[44px] px-[25px] font-extrabold text-[32px] bg-[#DBDBDB]  text-black '>LOGO</span>
-    
-//     <div className=" h-full w-full top-0 left-0  flex flex-col justify-center items-center space-y-4  absolute  ">
-//         <h2 className=" text-[42px] w-[900px]  font-roboto font-bold   uppercase tracking-tight">Lorem ipsum dolor sit amet consectetur. Quis adipiscing purus egestas aliquam viverra mi.</h2>
-//         <p className=" w-[732px] text-center leading-[25px] font-semibold text-[18px]">Lorem ipsum dolor sit amet consectetur. Mattis justo euismod volutpat vestibulum nisi at ac risus amet. Mi accumsan sagittis justo pellentesque id sed. Id tellus id luctus id. At quis nunc libero urna arcu vulputate sed ut. Nisl porta massa diam condimentum nulla quam.</p>
-        
-//         <p  className=" w-[732px] text-center leading-[25px] font-semibold text-[18px]">Lorem ipsum dolor sit amet consectetur. Volutpat in dictum nec condimentum ultrices non. Ornare semper in tincidunt pellentesque cras mauris in vitae. At viverra quis eu malesuada vel et porttitor. Nulla luctus quam lacus lacus non at. Tincidunt morbi feugiat a pulvinar euismod natoque nulla ligula. Tincidunt cursus vitae leo.</p>
-//         <span className=" flex gap-2 bg-white text-[#1959AC] px-4 py-[9px] rounded-lg font-bold">Loerum Ipsum <ArrowRight/></span>
-//         </div>
-//             </div>
-//   )
-// }
-
-// export default Four
-
 "use client"
 import { ArrowRight } from "lucide-react"
 
@@ -46,7 +21,7 @@ const Four = () => {
     <span className=' absolute left-[70px] top-[44px] px-[25px] font-extrabold text-[32px] bg-[#DBDBDB]  text-black 
     max-lg:left-6 max-lg:top-6 max-lg:text-2xl max-lg:px-4
     max-sm:left-4 max-sm:top-4 max-sm:text-xl max-sm:px-3
-    shadow-lg hover:scale-105 transition-transform duration-300 cursor-pointer'>LOGO</span>
+    shadow-lg hover:scale-105 transition-transform duration-300 cursor-pointer hidden md:block'>LOGO</span>
     
     <div className=" h-full w-full top-0 left-0  flex flex-col justify-center items-center space-y-4  absolute  
     max-lg:px-6 max-lg:py-20

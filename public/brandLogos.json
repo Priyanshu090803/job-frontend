@@ -1,0 +1,76 @@
+{
+  "brands": [
+    {
+      "id": 1,
+      "name": "Hero",
+      "image": "/hero.png",
+      "category": "traditional"
+    },
+    {
+      "id": 2,
+      "name": "Honda",
+      "image": "/honda.png",
+      "category": "traditional"
+    },
+    {
+      "id": 3,
+      "name": "Royal Enfield",
+      "image": "/royalEnfield.png",
+      "category": "traditional"
+    },
+    {
+      "id": 4,
+      "name": "Yamaha",
+      "image": "/yamaha.png",
+      "category": "traditional"
+    },
+    {
+      "id": 5,
+      "name": "Ola Electric",
+      "image": "/ola.png",
+      "category": "electric"
+    },
+    {
+      "id": 6,
+      "name": "Revolt",
+      "image": "/revolt.png",
+      "category": "electric"
+    },
+    {
+      "id": 7,
+      "name": "Bajaj",
+      "image": "/bajaj.png",
+      "category": "traditional"
+    },
+    {
+      "id": 8,
+      "name": "TVS",
+      "image": "/tvs.png",
+      "category": "traditional"
+    },
+    {
+      "id": 9,
+      "name": "KTM",
+      "image": "/ktm.png",
+      "category": "performance"
+    },
+    {
+      "id": 10,
+      "name": "Ather",
+      "image": "/ather.png",
+      "category": "electric"
+    },
+    {
+      "id": 11,
+      "name": "Ultraviolette",
+      "image": "/uv.jpg",
+      "category": "electric"
+    },
+    {
+      "id": 12,
+      "name": "Tork Motors",
+      "image": "/tork.jpg",
+      "category": "electric"
+    }
+  ]
+}

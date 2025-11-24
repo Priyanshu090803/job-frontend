@@ -1,15 +1,15 @@
- 
 
 import Image from 'next/image'
-import React from 'react'
 import { Button } from './ui/button'
 import { ArrowRight } from 'lucide-react'
 
 const Ten = () => {
   return (
-    <div className=' min-h-screen w-full border py-30 font-inter
+    <div className=' min-h-screen w-full   py-50 font-inter
     max-lg:py-20
-    max-sm:py-12 space-y-30 relative'> 
+    max-sm:py-12 space-y-30 relative
+    max-lg:space-y-20
+    max-sm:space-y-12'> 
      <div className="absolute inset-0 pointer-events-none h-full w-full">
             <Image
               src="/pagetengraphic.svg"
@@ -49,8 +49,12 @@ const Ten = () => {
         </div>
       </div>
      
-      <div className=' h-screen py-20'>
-         <div className=' w-[95%] h-[691px]  bg-[#F8F8F8] relative px-20  flex justify-end py-15'>
+      <div className=' h-screen py-20
+      max-lg:h-auto max-lg:py-12
+      max-sm:py-8'>
+         <div className=' w-[95%] h-[691px]  bg-[#F8F8F8] relative px-20  flex justify-end py-15
+         max-lg:w-full max-lg:h-auto max-lg:px-6 max-lg:py-12 max-lg:flex-col max-lg:gap-8
+         max-sm:px-4 max-sm:py-8'>
         <div className=' absolute bg-linear-to-r from-[#043898] via-[#079902] to-[#170041] left-0 -bottom-1 w-[97%]  h-4'/>
 
             <Image
@@ -58,17 +62,30 @@ const Ten = () => {
             alt='page-ten-2'
             height={550}
             width={550}
-            className=' object-cover absolute -top-[62px] left-0'
+            className=' object-cover absolute -top-[62px] left-0
+            max-xl:w-[450px] max-xl:h-[450px] max-xl:-top-12
+            max-lg:relative max-lg:w-full max-lg:h-[350px] max-lg:top-0 max-lg:left-0 max-lg:mb-6
+            max-sm:h-[250px]'
             />
-            <div className=' w-[620px]  space-y-5'>
-            <span className=' text-[#0546D2] tracking-tight text-[24px] font-semibold'>Lorem ipsum </span>
-            <h3 className=' uppercase text-[42px] tracking-tight font-bold font-roboto w-[487px]'><span>Lorem</span> ipsum dolor sit amet consectetur. Enim donec.</h3>
-            <p className=' leading-[25px] text-[18px]'>Lorem ipsum dolor sit amet consectetur. Vel pellentesque odio enim amet non. </p>
-  <div className="grid grid-cols-2 gap-4 max-sm:gap-3 w-[539px] ">
+            <div className=' w-[620px]  space-y-5
+            max-lg:w-full max-lg:z-10 max-lg:relative
+            max-sm:space-y-4'>
+            <span className=' text-[#0546D2] tracking-tight text-[24px] font-semibold
+            max-sm:text-xl'>Lorem ipsum </span>
+            <h3 className=' uppercase text-[42px] tracking-tight font-bold font-roboto w-[487px]
+            max-lg:w-full max-lg:text-3xl
+            max-sm:text-2xl'><span>Lorem</span> ipsum dolor sit amet consectetur. Enim donec.</h3>
+            <p className=' leading-[25px] text-[18px]
+            max-sm:text-base max-sm:leading-relaxed'>Lorem ipsum dolor sit amet consectetur. Vel pellentesque odio enim amet non. </p>
+  <div className="grid grid-cols-2 gap-4 max-sm:gap-3 w-[539px] 
+  max-lg:w-full
+  max-sm:grid-cols-1">
     {new Array(6).fill(0).map((_, index) => (
       <div
         key={index}
-        className="w-[223px] h-[48px]   flex items-center justify-start    text-sm font-medium"
+        className="w-[223px] h-[48px]   flex items-center justify-start    text-sm font-medium
+        max-lg:w-full
+        max-sm:h-[40px]"
       >
         Lorem Ipsum
       </div>

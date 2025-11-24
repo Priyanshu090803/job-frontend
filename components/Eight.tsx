@@ -3,61 +3,91 @@ import { ArrowRight } from 'lucide-react'
 
 const Eight = () => {
   return (
-    <div className='  w-full flex flex-col justify-center items-center   pt-30 space-y-20'> 
-        <h2 className=' text-[42px] tracking-tight font-bold font-roboto'>REQUEST A QUOTE</h2>
+    <div className='  w-full flex flex-col justify-center items-center   pt-30 space-y-20
+    max-lg:pt-20 max-lg:space-y-12 max-lg:px-6
+    max-sm:pt-12 max-sm:space-y-8 max-sm:px-4'> 
+        <h2 className=' text-[42px] tracking-tight font-bold font-roboto
+        max-lg:text-3xl
+        max-sm:text-2xl max-sm:text-center'>REQUEST A QUOTE</h2>
         <div
-        className=' w-[1108px] h-[806px]   '
+        className=' w-[1108px] h-[806px]   
+        max-lg:w-full max-lg:h-auto
+        max-sm:w-full'
         >
-           <form className="grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-8">
-          <div className="flex flex-col md:col-span-1 gap-3">
-            <label className="text-sm mb-1">Name</label>
-            <input className="border-[0.5px] hover:border-[#9F9F9F] border-neutral-400 bg-[#F4F4F4] focus:outline-[#9F9F9F] rounded-md h-10 px-3" type="text" />
+           <form className="grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-8
+           max-sm:gap-y-6">
+          <div className="flex flex-col md:col-span-1 gap-3
+          max-sm:gap-2">
+            <label className="text-sm mb-1
+            max-sm:text-xs">Name</label>
+            <input className="border-[0.5px] hover:border-[#9F9F9F] border-neutral-400 bg-[#F4F4F4] focus:outline-[#9F9F9F] rounded-md h-10 px-3
+            max-sm:h-12" type="text" />
           </div>
 
-          <div className="flex flex-col md:col-span-1 gap-3">
-            <label className="text-sm mb-1">E-mail</label>
-            <input className="border-[0.5px] hover:border-[#9F9F9F] border-neutral-400 bg-[#F4F4F4] focus:outline-[#9F9F9F] rounded-md h-10 px-3" type="email" />
+          <div className="flex flex-col md:col-span-1 gap-3
+          max-sm:gap-2">
+            <label className="text-sm mb-1
+            max-sm:text-xs">E-mail</label>
+            <input className="border-[0.5px] hover:border-[#9F9F9F] border-neutral-400 bg-[#F4F4F4] focus:outline-[#9F9F9F] rounded-md h-10 px-3
+            max-sm:h-12" type="email" />
           </div>
 
-          <div className="flex flex-col md:col-span-1 gap-3">
-            <label className="text-sm mb-1">Phone Number</label>
-            <input className="border-[0.5px] hover:border-[#9F9F9F] border-neutral-400 bg-[#F4F4F4] focus:outline-[#9F9F9F] rounded-md h-10 px-3" type="text" />
+          <div className="flex flex-col md:col-span-1 gap-3
+          max-sm:gap-2">
+            <label className="text-sm mb-1
+            max-sm:text-xs">Phone Number</label>
+            <input className="border-[0.5px] hover:border-[#9F9F9F] border-neutral-400 bg-[#F4F4F4] focus:outline-[#9F9F9F] rounded-md h-10 px-3
+            max-sm:h-12" type="text" />
           </div>
 
-          <div className="flex flex-col md:col-span-1 gap-3">
-            <label className="text-sm mb-1">Time Frame<span className="text-red-500">*</span></label>
-            <select className=" text-neutral-400 border-[0.5px] hover:border-[#9F9F9F] border-neutral-400 bg-[#F4F4F4] focus:outline-[#9F9F9F] rounded-md h-10 px-3">
+          <div className="flex flex-col md:col-span-1 gap-3
+          max-sm:gap-2">
+            <label className="text-sm mb-1
+            max-sm:text-xs">Time Frame<span className="text-red-500">*</span></label>
+            <select className=" text-neutral-400 border-[0.5px] hover:border-[#9F9F9F] border-neutral-400 bg-[#F4F4F4] focus:outline-[#9F9F9F] rounded-md h-10 px-3
+            max-sm:h-12 max-sm:text-sm">
               <option>Choose Time Frame</option>
             </select>
           </div>
 
-          <div className="flex flex-col md:col-span-1 gap-3">
-            <label className="text-sm mb-1">Size<span className="text-red-500">*</span></label>
-            <select className=" text-neutral-400 border-[0.5px] hover:border-[#9F9F9F] border-neutral-400 bg-[#F4F4F4] focus:outline-[#9F9F9F] rounded-md h-10 px-3">
+          <div className="flex flex-col md:col-span-1 gap-3
+          max-sm:gap-2">
+            <label className="text-sm mb-1
+            max-sm:text-xs">Size<span className="text-red-500">*</span></label>
+            <select className=" text-neutral-400 border-[0.5px] hover:border-[#9F9F9F] border-neutral-400 bg-[#F4F4F4] focus:outline-[#9F9F9F] rounded-md h-10 px-3
+            max-sm:h-12 max-sm:text-sm">
               <option>Choose Size</option>
             </select>
           </div>
 
-          <div className="flex flex-col md:col-span-1 gap-3">
-            <label className="text-sm mb-1">Quantity<span className="text-red-500">*</span></label>
-            <select className=" text-neutral-400 border-[0.5px] hover:border-[#9F9F9F] border-neutral-400 bg-[#F4F4F4] focus:outline-[#9F9F9F] rounded-md h-10 px-3 ">
+          <div className="flex flex-col md:col-span-1 gap-3
+          max-sm:gap-2">
+            <label className="text-sm mb-1
+            max-sm:text-xs">Quantity<span className="text-red-500">*</span></label>
+            <select className=" text-neutral-400 border-[0.5px] hover:border-[#9F9F9F] border-neutral-400 bg-[#F4F4F4] focus:outline-[#9F9F9F] rounded-md h-10 px-3 
+            max-sm:h-12 max-sm:text-sm">
               <option>Choose Quantity</option>
             </select>
           </div>
 
           {/* Description */}
-          <div className="flex flex-col md:col-span-2 gap-3">
-            <label className="text-sm mb-1">Please Describe Your Project<span className="text-red-500">*</span></label>
+          <div className="flex flex-col md:col-span-2 gap-3
+          max-sm:gap-2">
+            <label className="text-sm mb-1
+            max-sm:text-xs">Please Describe Your Project<span className="text-red-500">*</span></label>
             <textarea
-              className="border-[0.5px] hover:border-[#9F9F9F] border-neutral-400 bg-[#F4F4F4] focus:outline-[#9F9F9F] rounded-md px-3 py-2 min-h-[160px]"
+              className="border-[0.5px] hover:border-[#9F9F9F] border-neutral-400 bg-[#F4F4F4] focus:outline-[#9F9F9F] rounded-md px-3 py-2 min-h-[160px]
+              max-sm:min-h-[120px] max-sm:text-sm"
               placeholder="Choose a project type"
             ></textarea>
           </div>
         </form>
-        <div className=' flex justify-center items-center flex-col mt-12 text-[#3C3C3C]'>
-          <p>By submitting this form you agree to our <span className=' underline underline-offset-2'>Terms of Service</span>  and <span className=' underline underline-offset-2'>Privacy Policy</span>.</p>
+        <div className=' flex justify-center items-center flex-col mt-12 text-[#3C3C3C]
+        max-sm:mt-8'>
+          <p className='max-sm:text-sm max-sm:text-center max-sm:leading-relaxed'>By submitting this form you agree to our <span className=' underline underline-offset-2'>Terms of Service</span>  and <span className=' underline underline-offset-2'>Privacy Policy</span>.</p>
         <Button className='  bg-[#1959AC] text-[15px] h-full rounded-md shadow-lg cursor-pointer shadow-neutral-200  font-inter text-white flex justify-center items-center gap-2 w-[179px]
-        max-sm:w-full max-sm:h-[46px] mt-14'>Loerum Ipsum<ArrowRight/></Button>
+        max-sm:w-full max-sm:h-[46px] mt-14
+        max-sm:mt-8'>Loerum Ipsum<ArrowRight className='max-sm:w-4 max-sm:h-4'/></Button>
 
         </div>
         </div>

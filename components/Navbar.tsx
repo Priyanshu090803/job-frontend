@@ -1,6 +1,6 @@
  
 "use client";
-import { ArrowDown, ChevronDown, Menu, X } from "lucide-react";
+import { ChevronDown, Menu, X } from "lucide-react";
 import { useState, useEffect } from "react";
 
 const Navbar=()=> {

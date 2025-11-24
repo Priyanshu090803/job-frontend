@@ -5,7 +5,7 @@ const Five = () => {
   const row1 = [brandLogos.brands[0], brandLogos.brands[1], brandLogos.brands[6], brandLogos.brands[7]];  
   const row2 = [brandLogos.brands[2], brandLogos.brands[3], brandLogos.brands[8], brandLogos.brands[9]];  
   const row3 = [brandLogos.brands[4], brandLogos.brands[5], brandLogos.brands[10], brandLogos.brands[11]];  
-
+ 
   return (
     <div className="h-full py-32    w-full flex justify-center items-center
     max-lg:py-20
@@ -26,7 +26,7 @@ const Five = () => {
           max-lg:gap-12 max-lg:flex-wrap
           max-sm:gap-8 max-sm:grid max-sm:grid-cols-2">
             {row1.map((brand) => (
-              <div key={brand.id} className="flex items-center justify-center">
+              <div key={brand.id} className={`flex items-center justify-center `}>
                 <Image
                   src={brand.image}
                   alt={brand.name}

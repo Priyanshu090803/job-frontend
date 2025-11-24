@@ -1,6 +1,9 @@
  
+"use client"
+
 import Image from 'next/image';
 import Link from 'next/link';
+import { motion } from 'motion/react';
 
 const Six = () => {
   const cards = [
@@ -30,8 +33,33 @@ const Six = () => {
     }
   ];
 
+  const container = {
+    hidden: { opacity: 0 },
+    show: {
+      opacity: 1,
+      transition: {
+        staggerChildren: 0.2
+      }
+    }
+  };
+
+  const item = (index: number) => ({
+    hidden: { 
+      opacity: 0, 
+      x: index % 2 === 0 ? -100 : 100 
+    },
+    show: { 
+      opacity: 1, 
+      x: 0,
+      transition: {
+        duration: 0.6,
+        ease: "easeOut"
+      }
+    }
+  });
+
   return (
-    <div className="relative min-h-screen w-full bg-white overflow-hidden ">
+    <div className="relative min-h-screen w-full bg-white overflow-hidden">
       <div className="absolute inset-0 pointer-events-none z-0">
         <Image
           src="/Bg-Graphic.svg"
@@ -45,9 +73,20 @@ const Six = () => {
       <div className="relative z-10 max-w-[1440px] mx-auto px-6 py-16 mt-25
       max-lg:px-6 max-lg:py-12 max-lg:mt-20
       max-sm:px-4 max-sm:py-8 max-sm:mt-16">
-        <div className="relative mb-12 pl-8 space-y-4
-        max-sm:pl-0 max-sm:mb-8 max-sm:space-y-3">
-
+        <motion.div 
+          className="relative mb-12 pl-8 space-y-4
+          max-sm:pl-0 max-sm:mb-8 max-sm:space-y-3"
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ 
+            opacity: 1, 
+            y: 0,
+            transition: {
+              duration: 0.6,
+              ease: "easeOut"
+            }
+          }}
+          viewport={{ once: true }}
+        >
           <p className="text-[#0546D2] text-[26px] tracking-tight font-inter font-semibold 
           max-sm:text-xl">
             Lorem ipsum dolor sit amet
@@ -64,18 +103,28 @@ const Six = () => {
           max-sm:text-sm max-sm:leading-relaxed">
             Lorem ipsum dolor sit amet consectetur. Amet sodales sociis facilisis donec dui. Mi porttitor ut aliquam mattis maecenas eget integer in nam. Non nisl iaculis at felis aliquet. Hendrerit tellus at purus lectus.
           </p>
-        </div>
+        </motion.div>
 
-        <div className="flex flex-col gap-8
-        max-sm:gap-6">
+        <motion.div 
+          className="flex flex-col gap-8 max-sm:gap-6"
+          variants={container}
+          initial="hidden"
+          whileInView="show"
+          viewport={{ once: true, margin: "-50px" }}
+        >
           <div className="flex gap-8 justify-center flex-wrap 
           max-lg:gap-6
           max-sm:gap-4">
-            {cards.map((card) => (
-              <div key={card.id} className=" flex flex-col w-[445px] h-[560px]  border border-neutral-300 rounded-lg bg-white space-y-[35px] 
-              max-lg:w-[calc(50%-12px)] max-lg:h-auto max-lg:space-y-5
-              max-sm:w-full max-sm:space-y-4">
-                <div className="relative rounded-t-lg  w-[445px] h-[205px] mb-5 overflow-hidden
+            {cards.map((card, index) => (
+              <motion.div 
+                key={card.id} 
+                className="flex flex-col w-[445px] h-[560px] border border-neutral-300 rounded-lg bg-white space-y-[35px] 
+                max-lg:w-[calc(50%-12px)] max-lg:h-auto max-lg:space-y-5
+                max-sm:w-full max-sm:space-y-4"
+                //@ts-ignore
+                variants={item(index)}
+              >
+                <div className="relative rounded-t-lg w-[445px] h-[205px] mb-5 overflow-hidden
                 max-lg:w-full max-lg:h-[200px]
                 max-sm:h-[180px] max-sm:mb-3">
                   <Image
@@ -85,25 +134,25 @@ const Six = () => {
                     className="object-cover"
                   />
                 </div>
-                <h3 className="   mx-2 font-semibold font-inter text-black  mb-3 leading-tight text-[20px] 
+                <h3 className="mx-2 font-semibold font-inter text-black mb-3 leading-tight text-[20px] 
                 max-sm:text-lg max-sm:mb-2">
                   {card.title}
                 </h3>
-                <p className="text-[18px] font-inter mx-2  leading-[25px] mb-4
+                <p className="text-[18px] font-inter mx-2 leading-[25px] mb-4
                 max-sm:text-base max-sm:leading-relaxed max-sm:mb-3">
                   {card.description}
                 </p>
                 <Link 
                   href="#" 
-                  className="text-[#0546D2] text-[16px] font-inter font-medium  underline underline-offset-4 inline-block mx-2 tracking-tight
+                  className="text-[#0546D2] text-[16px] font-inter font-medium underline underline-offset-4 inline-block mx-2 tracking-tight
                   max-sm:text-sm max-sm:mb-4"
                 >
                   Learn More
                 </Link>
-              </div>
+              </motion.div>
             ))}
           </div>
-        </div>
+        </motion.div>
       </div>
     </div>
   );

@@ -1,7 +1,7 @@
 
 const SevenTeen = () => {
     return (
-    <div className='h-[546px] w-full bg-[#171E2B] relative py-10'>
+    <div className='h-[546px]  w-full bg-[#171E2B] relative py-10'>
 
       {/* LOGO */}
       <span
